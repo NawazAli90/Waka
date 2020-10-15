@@ -66,7 +66,7 @@
                 android:layout_height="match_parent">
 
                 <LinearLayout
-                    android:id="@+id/OutsidePicture"
+                    android:id="@+id/Outside-Picture"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -148,7 +148,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/InSidePicture"
+                    android:id="@+id/InSide-Picture"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">

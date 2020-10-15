@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.waka.ride">
+    package="com.shahjahan.kiwiuser">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -34,11 +34,13 @@
         <activity android:name=".activities.Formsubmit" />
         <activity android:name=".activities.Signupform" />
         <activity android:name=".activities.ForgotPasswordActivity" />
+        <activity android:name=".activities.ViewQRActivity" />
         <activity
             android:name=".activities.RegistrationActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize"
             tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".activities.viewAttendance" />
         <activity android:name=".activities.scanQRActivity" />
         <activity android:name=".activities.Dashboard" />
         <activity
