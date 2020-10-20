@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Waka Rideshare Driver</string>
+    <string name="open">Open</string>
+    <string name="close">close</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="logout">Logout</string>
+    <string name="image">Image</string>
+    <string name="view_attendance">View Visits</string>
+    <string name="present">Present</string>
+    <string name="absent">Absent</string>
+    <string name="home">Payment Methods</string>
+    <string name="history">History</string>
+    <string name="address">My Address</string>
+    <string name="seting">Setting</string>
+    <string name="online">Online Support</string>
+    <string name="refer">Refer To A Friend</string>
+    <string name="noti">Notification</string>
+    <string name="term"><![CDATA[Tearms & Privacy Policy]]></string>
+    <string name="title_activity_ridermap">Map</string>
+</resources>

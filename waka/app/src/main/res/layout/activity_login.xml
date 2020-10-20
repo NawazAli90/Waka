@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.login">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mz_white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Sign In"
+        app:titleTextColor="@color/colorBlack"
+        app:titleMarginStart="@dimen/_130sdp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/progressBar"
+        android:visibility="gone"/>
+
+
+    <EditText
+        android:id="@+id/inp_email"
+        android:layout_width="320dp"
+        android:layout_height="53dp"
+        android:background="@drawable/edittextsqure"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:padding="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/log0"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/log0"
+        app:layout_constraintTop_toBottomOf="@+id/log0"
+        app:layout_constraintVertical_bias="0.077"
+        app:tabIndicatorColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/log0"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logowaka"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inp_password"
+        android:layout_width="320dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittextsqure"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="@+id/inp_email"
+        app:layout_constraintStart_toStartOf="@+id/inp_email"
+        app:layout_constraintTop_toBottomOf="@+id/inp_email" />
+
+    <TextView
+        android:id="@+id/btnForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+        android:text="Forgot Password?"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/inp_password"
+        app:layout_constraintStart_toStartOf="@+id/inp_password"
+        app:layout_constraintTop_toBottomOf="@+id/inp_password" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/errorMsg"
+        android:textColor="@color/colorRed"
+        app:layout_constraintTop_toBottomOf="@id/btnForgotPassword"
+        app:layout_constraintStart_toStartOf="@id/inp_password"
+        android:layout_marginTop="@dimen/_1sdp"/>
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_button1"
+        android:scaleType="fitCenter"
+        android:text="@string/login"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="@+id/btnForgotPassword"
+        app:layout_constraintStart_toStartOf="@+id/btnForgotPassword"
+        app:layout_constraintTop_toBottomOf="@+id/btnForgotPassword" />
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="302dp"
+        android:layout_height="63dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/btnRegister"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+        app:layout_constraintVertical_bias="0.226"
+        app:srcCompat="@drawable/addwaka" />
+
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_button2"
+        android:text="Sign Up"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+    <TextView
+        android:id="@+id/kiwiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waka Rideshare is a 100% Community and Kiwi Owned"
+        android:textColor="@color/colorRed"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/add"
+        app:layout_constraintStart_toStartOf="@+id/add"
+        app:layout_constraintTop_toBottomOf="@+id/add" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
