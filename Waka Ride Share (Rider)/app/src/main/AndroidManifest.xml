@@ -3,6 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.wakaride.rideshare">
 
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -16,7 +22,37 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activities.Details"></activity>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activities.Map"
+            android:label="@string/title_activity_map"></activity>
+        <activity android:name=".activities.PaymentMethod" />
+        <activity android:name=".activities.History" />
+        <activity android:name=".activities.TripDetail" />
+        <activity android:name=".activities.Notification" />
+        <activity android:name=".activities.ResetPassword" />
+        <activity android:name=".activities.EmergencyContact" />
+        <activity android:name=".activities.ChatRoom" />
+        <activity android:name=".activities.UpdateProfile" />
+        <activity android:name=".activities.PromoCode" />
+        <activity android:name=".activities.RideComplete" />
+        <activity android:name=".activities.HomeRideAss" />
+        <activity android:name=".activities.HomeCnfrm" />
+        <activity android:name=".activities.HomeDropup" />
+        <activity android:name=".activities.HomePickup" />
+        <activity android:name=".activities.Details" />
         <activity android:name=".activities.Signupform" />
         <activity android:name=".activities.Terms" />
         <activity android:name=".activities.Onlinesupport" />
